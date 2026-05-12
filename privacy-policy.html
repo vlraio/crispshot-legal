@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Crispshot</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #F7F7F5;
+    --surface: #FFFFFF;
+    --accent: #5856D6;
+    --text: #1A1A1A;
+    --muted: #6B6B6B;
+    --border: rgba(0,0,0,0.08);
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 16px;
+  }
+
+  .header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+  }
+
+  .header-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    color: var(--text);
+    text-decoration: none;
+    letter-spacing: -0.3px;
+  }
+
+  .logo span {
+    color: var(--accent);
+  }
+
+  .badge {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--muted);
+    background: var(--bg);
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  .page-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 42px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    margin-bottom: 12px;
+  }
+
+  .page-meta {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 48px;
+  }
+
+  .summary-box {
+    background: var(--accent);
+    color: white;
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 56px;
+  }
+
+  .summary-box h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    opacity: 0.9;
+  }
+
+  .summary-box ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .summary-box li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 15px;
+    opacity: 0.92;
+  }
+
+  .summary-box li::before {
+    content: '✓';
+    font-weight: 500;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .section {
+    margin-bottom: 48px;
+  }
+
+  .section h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .section p {
+    color: #333;
+    margin-bottom: 12px;
+    font-size: 15.5px;
+  }
+
+  .section p:last-child { margin-bottom: 0; }
+
+  .section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 12px 0;
+  }
+
+  .section ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 15.5px;
+    color: #333;
+    padding-left: 4px;
+  }
+
+  .section ul li::before {
+    content: '–';
+    color: var(--accent);
+    flex-shrink: 0;
+    font-weight: 500;
+  }
+
+  .section a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .section a:hover { text-decoration: underline; }
+
+  .highlight-box {
+    background: rgba(88, 86, 214, 0.06);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    margin: 16px 0;
+    font-size: 15px;
+    color: #333;
+  }
+
+  .contact-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-top: 56px;
+    text-align: center;
+  }
+
+  .contact-box p {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .contact-box a {
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 32px 24px;
+    font-size: 13px;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+  }
+
+  @media (max-width: 600px) {
+    .page-title { font-size: 32px; }
+    .summary-box { padding: 22px 20px; }
+    .contact-box { padding: 22px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a class="logo" href="#">Crisp<span>shot</span></a>
+    <span class="badge">Legal</span>
+  </div>
+</header>
+
+<div class="container">
+
+  <h1 class="page-title">Privacy Policy</h1>
+  <p class="page-meta">Last updated: May 12, 2026</p>
+
+  <div class="summary-box">
+    <h2>The short version</h2>
+    <ul>
+      <li>Crispshot does not collect personal data</li>
+      <li>Your screenshots stay on your device</li>
+      <li>AI Auto-Blur runs entirely on your iPhone — nothing is sent to any server</li>
+      <li>iCloud sync uses your Apple ID and Apple's servers; we never see your data</li>
+      <li>No third-party analytics, advertising, or tracking SDKs</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Data we collect</h2>
+    <p><strong>None.</strong> Crispshot does not have a server, account system, or backend. We never receive, store, or process your personal data, screenshots, or usage information.</p>
+  </div>
+
+  <div class="section">
+    <h2>Data stored on your device</h2>
+    <p>Crispshot stores the following data locally on your iPhone or iPad inside the app's private sandbox:</p>
+    <ul>
+      <li>The screenshots you import or paste into the app</li>
+      <li>Stitched and exported images you create</li>
+      <li>Project metadata (titles, dates, style preferences, edit history)</li>
+      <li>Thumbnails for the Recent grid</li>
+      <li>Local UI preferences (default style, auto-blur on/off, etc.)</li>
+    </ul>
+    <p>This data is only accessible to the Crispshot app. It is not shared with us or with any third party.</p>
+  </div>
+
+  <div class="section">
+    <h2>iCloud sync</h2>
+    <p>If you enable iCloud sync in Settings, Crispshot uses Apple's CloudKit framework to synchronize your project metadata and thumbnails between your devices signed in to the same Apple ID.</p>
+    <ul>
+      <li>Sync happens through Apple's servers, encrypted and protected by your Apple ID</li>
+      <li>We do not have access to your iCloud data</li>
+      <li>Full-resolution screenshots are not synced — only metadata and small thumbnails</li>
+      <li>You can disable iCloud sync at any time in Settings</li>
+    </ul>
+    <p>For more information on how Apple handles iCloud data, see <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</p>
+  </div>
+
+  <div class="section">
+    <h2>On-device AI processing</h2>
+    <div class="highlight-box">
+      AI Auto-Blur uses Apple's Vision framework to detect names, emails, phone numbers, and other sensitive information in your screenshots. This processing happens <strong>entirely on your device</strong>. No images, text, or detection results leave your iPhone.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Photo Library access</h2>
+    <p>When you import screenshots, Crispshot uses Apple's PHPicker, which gives the app access only to the specific photos you select. We never request full access to your Photo Library. The selected images are copied into Crispshot's private storage and the original photos in your library are not modified.</p>
+  </div>
+
+  <div class="section">
+    <h2>Subscription handling</h2>
+    <p>If you subscribe to Crispshot Pro, the subscription is processed by Apple through StoreKit 2. Apple handles payment, billing, and subscription management.</p>
+    <ul>
+      <li>We do not receive your payment information</li>
+      <li>We do not store your Apple ID</li>
+      <li>Apple provides us only an anonymized receipt of the subscription status, used to unlock Pro features in the app</li>
+    </ul>
+    <p>Subscription terms and Apple's privacy practices apply: <a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank">Apple Media Services Terms</a>.</p>
+  </div>
+
+  <div class="section">
+    <h2>Third-party services</h2>
+    <p>Crispshot does not use any third-party analytics, advertising networks, crash reporting services, or tracking SDKs. There are no third-party services embedded in the app.</p>
+  </div>
+
+  <div class="section">
+    <h2>Children's privacy</h2>
+    <p>Crispshot is rated 4+ and does not knowingly collect any data from anyone, including children under 13. Since we do not collect data at all, there is nothing for us to know.</p>
+  </div>
+
+  <div class="section">
+    <h2>Your rights</h2>
+    <p>Because we do not collect or store your data on our servers, there is no data for us to delete, export, or modify on your behalf. You can:</p>
+    <ul>
+      <li>Delete any project from within the app at any time</li>
+      <li>Clear all local data by deleting Crispshot from your device</li>
+      <li>Disable iCloud sync in Settings to remove iCloud copies of your project metadata</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Changes to this policy</h2>
+    <p>If we ever change how Crispshot handles data — for example, by adding optional analytics in a future version — we will update this policy and notify users through the app before the change takes effect.</p>
+  </div>
+
+  <div class="contact-box">
+    <p>Questions about privacy?</p>
+    <a href="mailto:valery.e.akimov@gmail.com">valery.e.akimov@gmail.com</a>
+  </div>
+
+</div>
+
+<footer class="footer">
+  Crispshot is published by BUNKER GAMES. © 2026 BUNKER GAMES TRADING. All rights reserved.
+</footer>
+
+</body>
+</html>
