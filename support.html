@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — Crispshot</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #F7F7F5;
+    --surface: #FFFFFF;
+    --accent: #5856D6;
+    --text: #1A1A1A;
+    --muted: #6B6B6B;
+    --border: rgba(0,0,0,0.08);
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 16px;
+  }
+
+  .header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+  }
+
+  .header-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .logo span { color: var(--accent); }
+
+  .badge {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--muted);
+    background: var(--bg);
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  .page-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 42px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+  }
+
+  .page-sub {
+    font-size: 18px;
+    color: var(--muted);
+    margin-bottom: 56px;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 16px;
+  }
+
+  .card-icon {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .card h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+
+  .card p {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .card a.btn {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .card a.btn:hover { opacity: 0.9; }
+
+  .faq { margin-top: 56px; }
+
+  .faq h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    letter-spacing: -0.5px;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+  }
+
+  .faq-item:first-of-type { border-top: 1px solid var(--border); }
+
+  .faq-q {
+    font-weight: 500;
+    font-size: 15.5px;
+    margin-bottom: 8px;
+  }
+
+  .faq-a {
+    font-size: 15px;
+    color: var(--muted);
+  }
+
+  .footer {
+    text-align: center;
+    padding: 32px 24px;
+    font-size: 13px;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+  }
+
+  .footer a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  @media (max-width: 600px) {
+    .page-title { font-size: 32px; }
+    .card { padding: 22px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a class="logo" href="#">Crisp<span>shot</span></a>
+    <span class="badge">Support</span>
+  </div>
+</header>
+
+<div class="container">
+
+  <h1 class="page-title">How can we help?</h1>
+  <p class="page-sub">Get in touch or find answers below.</p>
+
+  <div class="card">
+    <div class="card-icon">✉️</div>
+    <h2>Email Support</h2>
+    <p>Have a question, found a bug, or want to suggest a feature? We read every message and usually reply within 24 hours.</p>
+    <a class="btn" href="mailto:valery.e.akimov@gmail.com">valery.e.akimov@gmail.com</a>
+  </div>
+
+  <div class="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">How do I stitch multiple screenshots?</div>
+      <div class="faq-a">Tap the "+" button on the Home screen, select 2 or more screenshots from Photos, and Crispshot will automatically stitch them together. You can then drag the seam handles to fine-tune the join points.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">How does AI Auto-Blur work?</div>
+      <div class="faq-a">AI Auto-Blur uses Apple's Vision framework to detect sensitive information (names, emails, phone numbers, @handles) directly on your device. Nothing is sent to any server. It's a Pro feature — you can also blur regions manually using the Blur tool.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Where are my projects stored?</div>
+      <div class="faq-a">All your screenshots and projects are stored locally on your device in Crispshot's private storage. If iCloud Sync is enabled in Settings, project metadata and thumbnails are also synced across your devices via your Apple ID.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">How do I cancel my Pro subscription?</div>
+      <div class="faq-a">Open Settings → Apple ID → Subscriptions → Crispshot Pro → Cancel Subscription. You'll retain Pro access until the end of the current billing period.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Can I use Crispshot from the Share Sheet?</div>
+      <div class="faq-a">Yes. In any app, tap the Share button and select Crispshot. A single screenshot goes directly to the Editor. Two or more screenshots open Stitch Review first.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">How do I export for Instagram / X / Telegram?</div>
+      <div class="faq-a">In the Editor, tap "···" → "Save to Photos" or "Share...". The Export Sheet lets you choose a platform preset (Instagram Story, X/Twitter, Telegram, iMessage, LinkedIn), format (PNG, JPEG, PDF), and resolution (1×, 2×, 3×).</div>
+    </div>
+
+  </div>
+
+</div>
+
+<footer class="footer">
+  Crispshot is published by BUNKER GAMES. © 2026 BUNKER GAMES TRADING. All rights reserved. &nbsp;·&nbsp;
+  <a href="https://vlraio.github.io/crispshot-legal/privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp;
+  <a href="https://vlraio.github.io/crispshot-legal/terms-of-service.html">Terms of Service</a>
+</footer>
+
+</body>
+</html>
